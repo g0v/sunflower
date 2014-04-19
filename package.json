@@ -1,0 +1,27 @@
+{
+    "name"       : "sunflower",
+    "description": "sunflower's Web page",
+    "version"    : "0.0.1",
+    "contributor": [
+        {
+            "name" : "EvaLin0101",
+            "email": "evalin0101@gmail.com"
+        }
+    ],
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Example test.\" && exit 0"
+    },
+    "engines":{
+        "node": "0.10.x"
+    },
+    "dependencies": {
+    },
+    "repository": [
+        {
+            "type": "git",
+            "url" : "https://github.com/g0v/sunflower"
+        }
+    ],
+    "license": "MIT"
+}

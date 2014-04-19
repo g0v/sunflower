@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e -x
+git --version
+
+git check --track -b gh-pages origin/gh-pages
+git merge gh-pages
+git push origin gh-pages
