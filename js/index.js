@@ -9,6 +9,12 @@ $(document).ready(function ()
 	{
 		sW = $(window).width();
 		sH = $(window).height();
+		
+		// Fixed .content width
+		$.each($('.content'),function (){
+		var adj_w = 74;
+		$(this).width(sW-adj_w-$(this).siblings('.timeline').width()); });
+		
 		$('body').width(sW).height(sH);
 	});
 	
@@ -33,25 +39,11 @@ $(document).ready(function ()
     	    view.show();
 		}
 	}();
-	var setContentBlock = function()
-	{
-		var tabs = ["news","comment","media"];
-		var block = $('.content .blocks');
-		
-		block.find('.tabs .tab').bind('click',OnTab);
-		block.find('.tabs .tab.'+tabs[0]).click();
-
-		function OnTab()
-		{
-			var tab_name = $(this).attr('class').replace('tab ','');
-			block.find('.lists .list').hide();
-			block.find('.lists .list.'+tab_name).show();
-		}
-	}();
 	var setTimeline = function()
 	{
+		var content_tabs = ["news","comment","media"];
 	    $.each($('.view.has_timeline'),init);
-	    
+		
 	    function init()
 	    {
 	        var view_id  = $(this).attr('id');
@@ -59,10 +51,30 @@ $(document).ready(function ()
 	        var timeline = $(this).find('.timeline');
 	        var pole     = timeline.find('.pole');
     		var dates    = timeline.find('.dates');
+			var block    = content.find('.blocks');
     		
+			// Event Listeners
+    		$(document).on('click','.events .event',OnClickEvent);
+			
+			// Actions
     		dates.html('');
     		content.hide();
-    		$(document).on('click','.events .event',OnClickEvent);
+			
+			// Set Pole
+			var timer = window.setInterval(pole,1000);
+			function pole(){ pole.height(timeline.height()+30); }
+			
+			// Set Content Tab
+			block.find('.tabs .tab').bind('click',OnTab);
+			block.find('.tabs .tab.' + content_tabs[0]).click();
+			
+			function OnTab()
+			{
+				var tab_name = $(this).attr('class').replace('tab ','');
+				block.find('.lists .list').hide();
+				block.find('.lists .list.'+tab_name).show();
+			}
+		
     		
     		$.ajax({url:'data/events.html',success:OnGotData});
     		function OnGotData(msg)
@@ -120,7 +132,6 @@ $(document).ready(function ()
     				html_event += '</div>';
     				events.append(html_event);
     			}
-    		    pole.height(timeline.height()+30);
     		}
     		function OnClickEvent()
     		{
