@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+DEMO
+=======
 島嶼天光學潮實紀錄
 =============
 Web site: [http://g0v.github.io/sunflower/](http://g0v.github.io/sunflower/)
@@ -12,3 +15,4 @@ Github: [https://github.com/g0v/SunflowerDocumentaryAPI](https://github.com/g0v/
 
 Hackfoldr: [http://hack.g0v.tw/sunflowerDocumentary](http://hack.g0v.tw/sunflowerDocumentary)
 
+>>>>>>> d491737ce85371374a801fee590469f7b50a27e6
