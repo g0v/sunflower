@@ -81,7 +81,9 @@ $(document).ready(function ()
     				if ( yyyy != now.yyyy || mm != now.mm || dd != now.dd )
     				{
     					var elem_date = $('<div class="date date_'+ date +'" class="date"></div>');
-    					var html = '<div class="label">'+date+'</div><div class="events"></div>';
+    					var html = '<div class="label">'+date+'</div>';
+						html += '<div class="dash"></div>';
+						html += '<div class="events"></div>';
     					
     					elem_date.html(html);
     					elem_date.attr('date-yyyy',yyyy);

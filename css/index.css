@@ -60,14 +60,20 @@ background-repeat:no-repeat; }
 	
 	/*-------------------------| Timeline |-------------------------*/
 	
-	.timeline { padding-top: 30px; }
+	.timeline { padding: 30px 10px; }
 		.timeline .pole ,
 		.timeline .label,
 		.timeline .events 
 		{ display:inline-block; vertical-align:top; }
 		
 		.timeline .date { padding:5px 0; width:300px; }
-		.timeline .date .label {  margin: 0 10px; }
+		.timeline .date .label {
+		width: 85px;
+		padding: 5px; 
+		font-size: 8pt;
+		border-radius: 8px;
+		text-align: center;
+		background-color: #ECECEC; }
 		
 		.timeline .eventsLine {
 		width: 14px;
@@ -77,20 +83,26 @@ background-repeat:no-repeat; }
 		border-bottom: solid 2px #666; } 
 		
 		.timeline .date > div { display:inline-block; vertical-align:top; }
+		
+		.timeline .date .dash {
+		width: 20px;
+		margin: 10px 5px;
+		border-top: 3px solid #999; }
+		
 		.timeline .date .events {
 		width: 150px;
 		padding: 10px;
-		margin-left: 10px;
-		margin-bottom: 10px;
 		background-color: #f5f5f5;
 		border-radius: 0 10px 10px 0; }
 		
 		.timeline .pole {
 		top: 75px;
-		width: 5px;
-		left: 100px;
+		width: 3px;
+		left: 119px;
 		position: absolute;
 		background-color: #999; }
+		
+		.timeline .events .event:first-child {}
 		
 		.timeline .event:hover { cursor:pointer; }
 		.timeline .event.focus { font-weight:bold; }
