@@ -177,7 +177,22 @@ background-repeat:no-repeat; }
 		#character .banner .title 
 		{ display:inline-block; vertical-align:top; }
 			
-		#character .groups { width:100px; }
+		#character .groups { 
+			width:100px;
+			margin: 0 5px;
+			margin-top: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+			padding: 0 20px;
+			font-weight:bold;
+			line-height: 35px;
+			border-radius: 5px;
+			display: block;
+			text-decoration: none;
+			vertical-align: middle;
+			background-color: #eee; }
+		#character .groups:hover { background-color:#fff000; color:white; } }
+		
 		#character .members { width:900px; }
 		#character .member { width:100px; display:inline-block; margin:10px; }
 		#character .members .avatar { width:100%; }
@@ -190,7 +205,11 @@ background-repeat:no-repeat; }
 		#literature .file .thumbnail
 		{ display:inline-block; vertical-align:top; }
 			
-		#literature .files { width:900px; }
+		#literature .files { 
+			width:75%; 
+			margin-right:30px;
+			margin-top:15px;
+		}
 		#literature .file {  }
 		#literature .file .thumbnail {}
 		
