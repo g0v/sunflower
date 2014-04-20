@@ -87,13 +87,12 @@ background-repeat:no-repeat; }
 		margin: 10px 5px;
 		border-top: 3px solid #999; }
 		
-		.timeline .date .events:hover { background-color: #FDF990; }
+		.timeline .date .events:hover { background-color: #FCFAC7; }
 		.timeline .date .events {
 		width: 150px;
 		padding: 10px 0;
 		border-radius: 10px;
 		background-color: #f5f5f5; }
-		
 		
 		.timeline .pole {
 		top: 75px;
@@ -157,13 +156,14 @@ background-repeat:no-repeat; }
 			/*----------| Others |----------*/
 			
 			.content .block.others { margin-top:10px; position:relative; }
-			.content .block.others .tabs { margin-left: 2%; }
 			.content .block.others .tabs .tab:hover { cursor:default; background-color:#FFF000 ; }
 			.content .block.others .tabs .tab {
+			widtH: 47%;
+			padding: 1%;
 			font-weight: bold;
-			padding: 2px 10px 3px;
+			text-align: center;
 			background-color: #FFF;
-			border-radius: 5px 5px 0 0; }
+			border-radius: 10px 10px 0 0; }
 			
 			.content .block.others .lists { } 
 			
