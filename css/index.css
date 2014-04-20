@@ -52,15 +52,11 @@ background-repeat:no-repeat; }
 	.timeline, .content { display:inline-block; vertical-align:top; }
 		
 	.view { display:none; }
-	.view .content  { width: 750px; padding: 10px; background-color: #ddd; margin: 20px 10px 25px 10px; }
 	#gist { display:block; }
-	
-	.view.has_timeline
-	{  }
 	
 	/*-------------------------| Timeline |-------------------------*/
 	
-	.timeline { padding: 30px 10px; }
+	.timeline { width:300px; padding: 30px 10px 0 10px; }
 		.timeline .pole ,
 		.timeline .label,
 		.timeline .events 
@@ -92,8 +88,8 @@ background-repeat:no-repeat; }
 		.timeline .date .events {
 		width: 150px;
 		padding: 10px;
-		background-color: #f5f5f5;
-		border-radius: 0 10px 10px 0; }
+		border-radius: 10px;
+		background-color: #f5f5f5; }
 		
 		.timeline .pole {
 		top: 75px;
@@ -107,8 +103,20 @@ background-repeat:no-repeat; }
 		.timeline .event:hover { cursor:pointer; }
 		.timeline .event.focus { font-weight:bold; }
 		
-		.content .w { margin-bottom: 5px; border-radius: 10px; background-color: white; padding: 5px; }
-		.content .w .name { width:80px; font-weight: bold; margin-left: 5px; border-right:1px solid #ccc; }
+		/*-------------------------| Content |-------------------------*/
+		
+		.content { 
+		width: 750px; 
+		padding: 1%; 
+		background-color: #ddd; 
+		margin: 20px 10px 25px 10px; }
+	
+		.content .col { display:inline-block; vertical-align:top; }
+		.content .col.l { width:39.5%; }
+		.content .col.r { width:59.5%; }
+		
+		.content .w { margin-bottom: 10px; border-radius: 10px; background-color: white; padding: 5px; }
+		.content .w .name { width:80px; font-weight: bold; padding: 0 10px; border-right:1px solid #ccc; }
 		.content .w .text { margin-left: 5px; }
 		.content .w > div { display:inline-block; vertical-align:top; }
 		.content .what  { }
@@ -142,6 +150,12 @@ background-repeat:no-repeat; }
 		.content .blocks .tabs > div,
 		.content .blocks .list s> div
 		{ display:inline-block; vertical-align:top; }
+		
+		.content .block.description .name { background-color: #BBB; padding: 10px 20px; }
+		.content .block.description .text { background-color: #FFF; padding: 10px 20px; }
+		.content .block.description {
+			border: solid 1px #777;
+		}
 		
 		/*-------------------------| Character |-------------------------*/
 		
