@@ -44,6 +44,7 @@ $(document).ready(function ()
 		var content_tabs = ["news","comment","media"];
 	    $.each($('.view.has_timeline'),init);
 		
+		
 	    function init()
 	    {
 	        var view_id  = $(this).attr('id');
@@ -59,6 +60,7 @@ $(document).ready(function ()
 			// Actions
     		dates.html('');
     		content.hide();
+			set_mouse_effect();
 			
 			// Set Pole
 			var timer = setInterval(function(){
@@ -153,6 +155,17 @@ $(document).ready(function ()
     				content.find('.block.album img.thumbnail').attr("src",data.thumbnail);
     			}
     		} 
-	    }
+			function set_mouse_effect()
+			{
+				console.log(timeline.attr('class'));
+				return;
+				console.log('set_mouse_effect');
+				console.log('length : '+$('.timeline .event').length);
+				timeline.find('.event').hover( mouse_in , mouse_out );
+				
+				function mouse_in(){ console.log('mouse_in'); }
+				function mouse_out(){ console.log('mouse_out'); }
+			}
+		}
 	}();
 });
