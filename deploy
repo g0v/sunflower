@@ -5,6 +5,5 @@ git --version
 git remote update
 git fetch
 
-git checkout --track -b gh-pages origin/gh-pages
-git merge gh-pages
+git checkout -b gh-pages
 git push origin gh-pages
