@@ -51,7 +51,7 @@ $(document).ready(function ()
 	        var timeline = $(this).find('.timeline');
 	        var pole     = timeline.find('.pole');
     		var dates    = timeline.find('.dates');
-			var block    = content.find('.blocks');
+			var block_O = content.find('.block.others');
     		
 			// Event Listeners
     		$(document).on('click','.events .event',OnClickEvent);
@@ -65,15 +65,15 @@ $(document).ready(function ()
 			pole.height(pole.closest('.view').height()+50);
 			},1000);
 			
-			// Set Content Tab
-			block.find('.tabs .tab').bind('click',OnTab);
-			block.find('.tabs .tab.' + content_tabs[0]).click();
+			// Set Block Others
+			block_O.find('.tabs .tab').bind('click',OnTab);
+			block_O.find('.tabs .tab.' + content_tabs[0]).click();
 			
 			function OnTab()
 			{
 				var tab_name = $(this).attr('class').replace('tab ','');
-				block.find('.lists .list').hide();
-				block.find('.lists .list.'+tab_name).show();
+				block_O.find('.lists .list').hide();
+				block_O.find('.lists .list.'+tab_name).show();
 			}
 		
     		$.ajax({url:'data/events.html',success:OnGotData});
