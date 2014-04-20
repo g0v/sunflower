@@ -2,8 +2,8 @@
 	"eid":1,
 	"date":{"full":"2014-03-18","yyyy":2014,"mm":3,"dd":18},
 	"title":"事件一",
-	"why":"事件起因",
-	"place":"地點一",
+	"description":"事件起因",
+	"site":"地點一",
 	"images":[
 	{ "id":1,"title":"圖片一", "url":"image/1.jpg", "description":"圖片說明 1" },
 	{ "id":2,"title":"圖片二", "url":"image/2.jpg", "description":"圖片說明 2" },

@@ -76,7 +76,6 @@ $(document).ready(function ()
 				block.find('.lists .list.'+tab_name).show();
 			}
 		
-    		
     		$.ajax({url:'data/events.html',success:OnGotData});
     		function OnGotData(msg)
     		{
@@ -136,9 +135,9 @@ $(document).ready(function ()
     		}
     		function OnClickEvent()
     		{
-    			var eid_A = $(this).attr('eid')
-    			var eid_B = content.attr('eid');
-    			if ( eid_A != eid_B ){ reloadContent(); }
+    			var eid = $(this).attr('eid');
+    			content.attr('eid',eid);
+    			reloadContent();
     		}
     		function reloadContent()
     		{
@@ -148,19 +147,10 @@ $(document).ready(function ()
     			function OnGotEventData(msg)
     			{
     				var data = $.parseJSON(msg);
-    				content.find('.what .text').html(data.title);
-    				content.find('.when .text').html(data.date.full);
-    				content.find('.why .text').html(data.why);
-    				content.find('.where .text').html(data.place);
-    				
-    				content.find('.album .list').html();
-    				
-    				var images = data.images;
-    				for(var i=0;i<images.length;i++)
-    				{
-    					var html_img = '<div class="image"><img title="'+images[i].title+'" src="'+images[i].url+'" />';
-    					content.find('.album .list').append(html_img);
-    				}
+    				content.find('.block.info .site .text').html(data.site);
+    				content.find('.block.info .date .text').html(data.date.full);
+    				content.find('.block.description .text').html(data.description);
+    				content.find('.block.album img.thumbnail').attr("src",data.thumbnail);
     			}
     		} 
 	    }
