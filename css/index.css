@@ -32,12 +32,15 @@ background-repeat:no-repeat; }
 	#menu   { display:inline-block; position:relative; top:-5px;  }
 	
 	#menu > li {
-	margin: 0 20px;
-	line-height:35px;
-	border-radius:5px; 
-	display:inline-block;
-	text-decoration:none;
-	vertical-align:middle;	 }
+	margin: 0 5px;
+	padding: 0 20px;
+	line-height: 35px;
+	border-radius: 5px;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	background-color: #eee; }
+	#menu > li:hover { background-color:#333; color:white; }
 
 /*-------------------------| Top |-------------------------*/
 
