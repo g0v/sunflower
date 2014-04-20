@@ -45,7 +45,7 @@ background-repeat:no-repeat; }
 	text-decoration: none;
 	vertical-align: middle;
 	background-color: #eee; }
-	#menu > li:hover { background-color:#333; color:white; }
+	#menu > li:hover { background-color:#FFF000; }
 	#menu > li.contact, #menu > li.contact:hover { background:none; }
 
 /*-------------------------| Top |-------------------------*/
@@ -89,7 +89,7 @@ background-repeat:no-repeat; }
 		
 		.timeline .date .events {
 		width: 150px;
-		padding: 10px;
+		padding: 10px 0;
 		border-radius: 10px;
 		background-color: #f5f5f5; }
 		
@@ -102,7 +102,8 @@ background-repeat:no-repeat; }
 		
 		.timeline .events .event:first-child {}
 		
-		.timeline .event:hover { cursor:pointer; }
+		.timeline .event { background:none; padding: 5px 10px; }
+		.timeline .event:hover { cursor:pointer; background-color:#FFF000; }
 		.timeline .event.focus { font-weight:bold; }
 		
 		/*-------------------------| Content |-------------------------*/
@@ -155,7 +156,7 @@ background-repeat:no-repeat; }
 			
 			.content .block.others { margin-top:10px; position:relative; }
 			.content .block.others .tabs { margin-left: 2%; }
-			.content .block.others .tabs .tab:hover { cursor:default; background-color:#ffe000; }
+			.content .block.others .tabs .tab:hover { cursor:default; background-color:#FFF000 ; }
 			.content .block.others .tabs .tab { background-color:#aaa;color:#fff;  border-radius:5px 5px 0 0; padding:2px 10px 3px; font-weight:bold;}
 			.content .block.others .lists {
 			left: 0;
