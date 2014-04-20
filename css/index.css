@@ -87,11 +87,13 @@ background-repeat:no-repeat; }
 		margin: 10px 5px;
 		border-top: 3px solid #999; }
 		
+		.timeline .date .events:hover { background-color: #FDF990; }
 		.timeline .date .events {
 		width: 150px;
 		padding: 10px 0;
 		border-radius: 10px;
 		background-color: #f5f5f5; }
+		
 		
 		.timeline .pole {
 		top: 75px;
@@ -157,14 +159,13 @@ background-repeat:no-repeat; }
 			.content .block.others { margin-top:10px; position:relative; }
 			.content .block.others .tabs { margin-left: 2%; }
 			.content .block.others .tabs .tab:hover { cursor:default; background-color:#FFF000 ; }
-			.content .block.others .tabs .tab { background-color:#aaa;color:#fff;  border-radius:5px 5px 0 0; padding:2px 10px 3px; font-weight:bold;}
-			.content .block.others .lists {
-			left: 0;
-			right: 0;
-			top: 25px;
-			bottom: 0;
-			position: absolute;
-			background-color:#FFF; } 
+			.content .block.others .tabs .tab {
+			font-weight: bold;
+			padding: 2px 10px 3px;
+			background-color: #FFF;
+			border-radius: 5px 5px 0 0; }
+			
+			.content .block.others .lists { } 
 			
 			.content .block.others .tabs > div,
 			.content .block.others .list s> div
