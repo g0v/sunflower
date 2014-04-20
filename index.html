@@ -5,60 +5,99 @@
 		<title>Sunflower</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"></link>
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/character.js"></script>
+		<script type="text/javascript" src="js/files.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 	</head>
 	<body>
 		<div id="container">
 			<div id="main">
-				<div id="timeline">
-					<div class="pole"></div>
-					<div class="dates"></div>
+				<div id="gist" class="view has_timeline">
+					<div class="timeline">
+						<div class="pole"></div>
+						<div class="dates"></div>
+					</div>
+					<div class="content">
+						<div class="w what">
+							<div class="name">事件名稱</div>
+							<div class="text"></div>
+						</div>
+						<div class="w when">
+							<div class="name">發生日期</div>
+							<div class="text"></div>
+						</div>
+						<div class="w why">
+							<div class="name">起因</div>
+							<div class="text"></div>
+						</div>
+						<div class="w where">
+							<div class="name">地點</div>
+							<div class="text"></div>
+						</div>
+						<div class="album">
+							<div class="view"><img src="" /></div>
+							<div class="list_frame">
+								<div class="list"></div>
+							</div>
+						</div>
+						<div class="blocks">
+							<div class="tabs">
+								<div class="tab news">新聞</div>
+								<div class="tab comment">評論</div>
+								<div class="tab media">影音</div>
+							</div>
+							<div class="lists">
+								<div class="list news">新聞列表</div>
+								<div class="list comment">評論列表</div>
+								<div class="list media">影音列表</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div id="content">
-					<div class="w what">
-						<div class="name">事件名稱</div>
-						<div class="text"></div>
+				<div id="speech" class="view has_timeline">
+					<div class="timeline">
+						<div class="pole"></div>
+						<div class="dates"></div>
 					</div>
-					<div class="w when">
-						<div class="name">發生日期</div>
-						<div class="text"></div>
+					<div class="content"></div>
+				</div>
+				<div id="story" class="view has_timeline">
+					<div class="timeline">
+						<div class="pole"></div>
+						<div class="dates"></div>
 					</div>
-					<div class="w why">
-						<div class="name">起因</div>
-						<div class="text"></div>
-					</div>
-					<div class="w where">
-						<div class="name">地點</div>
-						<div class="text"></div>
-					</div>
-					<div class="album">
-						<div class="view"><img src="" /></div>
-						<div class="list_frame">
-							<div class="list"></div>
-						</div>
-					</div>
-					<div class="blocks">
-						<div class="tabs">
-							<div class="tab news">新聞</div>
-							<div class="tab comment">評論</div>
-							<div class="tab media">影音</div>
-						</div>
-						<div class="lists">
-							<div class="list news">新聞列表</div>
-							<div class="list comment">評論列表</div>
-							<div class="list media">影音列表</div>
-						</div>
-					</div>
+					<div class="content"></div>
+				</div>
+				<div id="character" class="view">
+				    <div class="groups">
+				        <div class="group" group-id="1" group-name="黑島青">黑島青</div>
+				        <div class="group" group-id="2" group-name="g0v">g0v</div>
+				        <div class="group" group-id="3" group-name="糾察組">糾察組</div>
+				        <div class="group" group-id="4" group-name="物資組">物資組</div>
+				        <div class="group" group-id="5" group-name="醫護組">醫護組</div>
+				    </div>
+				    <div class="members" group=""></div>
+				</div>
+				<div id="literature" class="view">
+				    <div class="categories">
+				        <div class="category" category-id="1" category-name="分類一">分類一</div>
+				        <div class="category" category-id="2" category-name="分類二">分類二</div>
+				        <div class="category" category-id="3" category-name="分類三">分類三</div>
+				        <div class="category" category-id="4" category-name="分類四">分類四</div>
+				        <div class="category" category-id="5" category-name="分類五">分類五</div>
+				    </div>
+				    <div class="files" group=""></div>
 				</div>
 			</div>
 			<div id="top">
 				<a id="logo">島嶼天光學潮</a>
 				<form id="search"><input type="text" /></form>
 				<ul id="menu">
-					<li>演講</li>
-					<li>小故事</li>
-					<li>人物</li>
-					<li>文宣</li>
+					<li tab="gist">概要</li>
+					<li tab="speech">演講</li>
+					<li tab="story">小故事</li>
+					<li tab="character">人物</li>
+					<li tab="literature">文宣</li>
 					<li>影音 / 藝創</li>
                     <li><img src="img/icon-email.png" alt="聯絡我們" /></li>
 				</ul>
