@@ -73,6 +73,9 @@ $(document).ready(function ()
 			
 			function OnTab()
 			{
+				$(this).siblings('.tab').removeClass('focus');
+				$(this).addClass('focus');
+				
 				var tab_name = $(this).attr('class').replace('tab ','');
 				block_O.find('.lists .list').hide();
 				block_O.find('.lists .list.'+tab_name).show();
