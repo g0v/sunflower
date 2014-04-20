@@ -158,14 +158,8 @@ $(document).ready(function ()
 			function set_mouse_effect()
 			{
 				console.log(timeline.attr('class'));
-<<<<<<< HEAD
 				console.log(timeline.find('.event').length);
-				return;
-=======
-				return;
-				console.log('set_mouse_effect');
->>>>>>> 0b71b59f8990e788d9efe4d2dbb771420eeabb78
-				console.log('length : '+$('.timeline .event').length);
+				return; 
 				timeline.find('.event').hover( mouse_in , mouse_out );
 				
 				function mouse_in(){ console.log('mouse_in'); }
