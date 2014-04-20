@@ -61,8 +61,9 @@ $(document).ready(function ()
     		content.hide();
 			
 			// Set Pole
-			var timer = window.setInterval(pole,1000);
-			function pole(){ pole.height(timeline.height()+30); }
+			var timer = setInterval(function(){
+			pole.height(pole.closest('.view').height());
+			},1000);
 			
 			// Set Content Tab
 			block.find('.tabs .tab').bind('click',OnTab);
