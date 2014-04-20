@@ -62,7 +62,7 @@ $(document).ready(function ()
 			
 			// Set Pole
 			var timer = setInterval(function(){
-			pole.height(pole.closest('.view').height());
+			pole.height(pole.closest('.view').height()+50);
 			},1000);
 			
 			// Set Content Tab
