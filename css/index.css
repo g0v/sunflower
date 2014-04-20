@@ -191,7 +191,7 @@ background-repeat:no-repeat; }
 			text-decoration: none;
 			vertical-align: middle;
 			background-color: #eee; }
-		#character .group:hover { background-color:#fff000; color:white; } }
+		#character .group:hover { background-color:#fff000; color:white; }
 		
 		#character .members { width:900px;float: left; }
 		#character .member { width:100px; display:inline-block; margin:10px; }
