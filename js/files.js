@@ -18,12 +18,12 @@ function init_view_files()
         for(var i=1;i<=10;i++)
         {
             var file = '<div class="file">';
-            file += '<img class="thumbnail" src="img/default.png"></img>';
+            file += '<img class="file_pic" src="img/default.png"></img>';
             file += '<div class="info">';
-            file += '   <div><div class="title">標題</div><div class="data"></div></div>';
-            file += '   <div><div class="title">作者</div><div class="data"></div></div>';
-            file += '   <div><div class="title">說明</div><div class="data"></div></div>';
-            file += '   <div><div class="title">下載</div><div class="data"></div></div>';
+            file += '   <div><div class="file_title">標題</div><div class="data"></div></div>';
+            file += '   <div><div class="file_author">作者</div><div class="data"></div></div>';
+            file += '   <div><div class="file_description">說明</div><div class="data"></div></div>';
+            file += '   <div><div class="file_download">下載</div><div class="data"></div></div>';
             file += '</div>';
             elem_files.append(file);
         }

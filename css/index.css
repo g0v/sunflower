@@ -200,18 +200,9 @@ background-repeat:no-repeat; }
 		
 		/*-------------------------| Files |-------------------------*/
 		
-		#literature > div,
-		#literature .file .info,
-		#literature .file .thumbnail
-		{ display:inline-block; vertical-align:top; }
+		
 			
-		#literature .files { 
-			width:75%; 
-			margin-right:30px;
-			margin-top:15px;
-		}
-		#literature .file {  }
-		#literature .file .thumbnail {}
+		
 		
 /*-------------------------| Footer |-------------------------*/
 
