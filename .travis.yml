@@ -2,6 +2,7 @@ language: node_js
 
 node_js:
   - '0.10'
+
 before_script:
   - chmod +x .travis/after_success.sh
   - chmod +x ./deploy
@@ -9,6 +10,6 @@ before_script:
 env:
   global:
     - REPO="git@github.com:g0v/sunflower"
-    - secure: "J6cPxjDnCuElKAxkA8F5VgE7EJ5Uvzd0Y+fPhyu+m6C+I5014vn5ic6s6Wbz9nkDOcE979vw7KDdUfpLykWRW6bCxQKho3i3zVZjg5KZDYz9NM1ZmJfQd6NVDMH2SGn6o+KhH7mvgEl1vA2RVtDt2Ud4eBJneK1eiJAj1B8hYrA="
+    - secure: "AFqyb9lQmG5Q8u6Prob1sghlSkLQkxNd5KM36y96d1Gzy/R6348Hd19/Flb6upcEejLAjNnQGdyIgVICbG3yB2LvRcOg965GDa7bJERwQQU3VyrXNMlJp+xcDDYQoUJVRCdV7z2HmfuhZYOOXQhEgqfFTtjG4bGR+1TlAsJ8+kY="
 
 after_success: .travis/after_success.sh
