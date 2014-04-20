@@ -1,4 +1,8 @@
 /*-------------------------| literature |-------------------------*/
+		#literature > div,
+		#literature .file .info,
+		#literature .file .thumbnail
+		{ display:inline-block; vertical-align:top; }
 
 		.category {
 		margin: 0 5px;
@@ -14,3 +18,37 @@
 		vertical-align: middle;
 		background-color: #eee; }
 		.category:hover { background-color:#fff000; color:white; }
+
+			#literature .file .info{
+				width:60%;
+				border:gray 1px solid;
+				border-radius: 5px;
+
+			}
+
+		#literature .files { 
+			width:75%; 
+			margin-right:30px;
+			margin-top:15px;
+		}
+		#literature .file { 
+			margin-bottom:40px;
+		}
+		#literature .file .file_title{ 
+			font-size: 18px;
+			font-weight: bold;
+			padding: 3px;
+		 }
+		 #literature .file .file_author{ 
+			padding: 3px;
+		 }
+		 #literature .file .file_description{ 
+			padding: 3px;
+		 }
+		 #literature .file .file_download{ 
+		 	font-weight: bold;
+			padding: 3px;
+		 }
+
+
+		#literature .file .thumbnail {}

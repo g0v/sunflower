@@ -154,19 +154,19 @@ background-repeat:no-repeat; }
 			/*----------| Others |----------*/
 			
 			.content .block.others { margin-top:10px; position:relative; }
-			.content .block.others .tabs .tab:hover { cursor:default; background-color:#FFF000 ; }
+			.content .block.others .tabs .tab:hover { cursor:default; background-color:#FFFBBB ; }
+			.content .block.others .tabs .tab.focus { background-color: #FFF000; }
 			.content .block.others .tabs .tab {
 			widtH: 47%;
 			padding: 1%;
 			font-weight: bold;
 			text-align: center;
 			background-color: #FFF;
-			border-radius: 10px 10px 0 0; }
+			border-radius: 10px 10px 0 0; }	
 			
-			.content .block.others .lists { } 
-			
+			.content .block.others .lists { border-radius: 10px 10px 0 0; border-top: 5px solid #FFF000; padding: 5px; } 
 			.content .block.others .tabs > div,
-			.content .block.others .list s> div
+			.content .block.others .lists> div
 			{ display:inline-block; vertical-align:top; }
 		
 		/*-------------------------| Character |-------------------------*/
@@ -198,18 +198,9 @@ background-repeat:no-repeat; }
 		
 		/*-------------------------| Files |-------------------------*/
 		
-		#literature > div,
-		#literature .file .info,
-		#literature .file .thumbnail
-		{ display:inline-block; vertical-align:top; }
+		
 			
-		#literature .files { 
-			width:75%; 
-			margin-right:30px;
-			margin-top:15px;
-		}
-		#literature .file {  }
-		#literature .file .thumbnail {}
+		
 		
 /*-------------------------| Footer |-------------------------*/
 
