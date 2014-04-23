@@ -2,7 +2,7 @@
 
 /*-------------------------| Common |-------------------------*/
 
-body { 
+body {
 font-family:'微軟正黑體';
 padding:0; margin:0; overflow-x:hidden;  }
 
@@ -22,7 +22,7 @@ position:fixed;
 background-color:#FFF;
 border-bottom:solid 15px #666;
 background-repeat:no-repeat; }
- 
+
 	#logo {
 	padding-top:5px;
 	overflow:hidden;
@@ -31,10 +31,10 @@ background-repeat:no-repeat; }
 	display:inline-block;
 	width:200px; height:60px;
 	background-image:url(../img/logo.png); }
-	
+
 	#search { display:inline-block;padding: 25px 0 0 30px;}
 	#menu   { display:inline-block; position:relative; top:-5px;  }
-	
+
 	#menu > li {
 	margin: 0 5px;
 	padding: 0 15px;
@@ -52,74 +52,74 @@ background-repeat:no-repeat; }
 
 #main { margin : 75px 0 26px 0; }
 	.timeline, .content { display:inline-block; vertical-align:top; }
-		
+
 	.view { display:none; }
 	#gist { display:block; }
-	
+
 	/*-------------------------| Timeline |-------------------------*/
-	
+
 	.timeline { width:300px; padding: 30px 10px 0 10px; }
 		.timeline .pole ,
 		.timeline .label,
-		.timeline .events 
+		.timeline .events
 		{ display:inline-block; vertical-align:top; }
-		
+
 		.timeline .date { padding:5px 0; width:300px; }
 		.timeline .date .label {
 		width: 85px;
-		padding: 5px; 
+		padding: 5px;
 		font-size: 8pt;
 		border-radius: 8px;
 		text-align: center;
 		background-color: #ECECEC; }
-		
+
 		.timeline .eventsLine {
 		width: 14px;
 		height: 8px;
 		vertical-align: top;
 		display: inline-block;
-		border-bottom: solid 2px #666; } 
-		
+		border-bottom: solid 2px #666; }
+
 		.timeline .date > div { display:inline-block; vertical-align:top; }
-		
+
 		.timeline .date .dash {
 		width: 20px;
 		margin: 10px 5px;
 		border-top: 3px solid #999; }
-		
+
 		.timeline .date .events:hover { background-color: #FCFAC7; }
 		.timeline .date .events {
 		width: 150px;
 		padding: 10px 0;
 		border-radius: 10px;
 		background-color: #f5f5f5; }
-		
+
 		.timeline .pole {
 		top: 75px;
 		width: 3px;
 		left: 119px;
 		position: absolute;
 		background-color: #999; }
-		
+
 		.timeline .events .event:first-child {}
-		
+
 		.timeline .event { background:none; padding: 5px 10px; }
 		.timeline .event:hover { cursor:pointer; background-color:#FFF000; }
 		.timeline .event.focus { font-weight:bold; }
-		
+
 		/*-------------------------| Content |-------------------------*/
-		
-		.content { 
+
+		.content {
 		padding: 1% 0;
 		background-color: #ddd;
 		margin: 20px 10px 25px 10px; }
-	
+
 		.content .col { display:inline-block; vertical-align:top; }
 		.content .col.l { width: 56%; margin-left:2%; }
 		.content .col.r { width: 38%; margin: 0 1%; }
-		
+
 			/*----------| Info |----------*/
-			
+
 			.content .block.info .name { width: 10%; min-width:40px; font-weight: bold; padding: 0 10px; border-right:1px solid #ccc; }
 			.content .block.info .text { margin-left: 5px; min-width: 150px; }
 			.content .block.info > div {
@@ -128,31 +128,31 @@ background-repeat:no-repeat; }
 			margin-bottom: 2%;
 			border-radius: 10px;
 			background-color: white; }
-			
-			.content .block.info > div > div { vertical-align:top; display:inline-block; }			
+
+			.content .block.info > div > div { vertical-align:top; display:inline-block; }
 			/*----------| Description |----------*/
-			
+
 			.content .block.description .name { background-color: #BBB; padding: 10px 20px; font-weight:bold; }
 			.content .block.description .text { background-color: #FFF; padding: 10px 20px; }
 			.content .block.description { border: solid 1px #777; }
-			
+
 			/*----------| Album |----------*/
-			
-			.content .block.album { 
+
+			.content .block.album {
 			width: 96%;
 			padding: 2%;
 			border-radius: 10px;
 			background-color: white; }
-			
+
 			.content .block.album .enter {
 			margin: auto;
 			padding: 5px 0;
 			display: block;
 			text-align: center;
 			border-radius: 5px;
-			background-color: #C9C9C9; }		
+			background-color: #C9C9C9; }
 			/*----------| Others |----------*/
-			
+
 			.content .block.others { margin-top:10px; position:relative; }
 			.content .block.others .tabs .tab:hover { cursor:default; background-color:#FFFBBB ; }
 			.content .block.others .tabs .tab.focus { background-color: #FFF000; }
@@ -162,21 +162,21 @@ background-repeat:no-repeat; }
 			font-weight: bold;
 			text-align: center;
 			background-color: #FFF;
-			border-radius: 10px 10px 0 0; }	
-			
-			.content .block.others .lists { border-radius: 10px 10px 0 0; border-top: 5px solid #FFF000; padding: 5px; } 
+			border-radius: 10px 10px 0 0; }
+
+			.content .block.others .lists { border-radius: 10px 10px 0 0; border-top: 5px solid #FFF000; padding: 5px; }
 			.content .block.others .tabs > div,
 			.content .block.others .lists> div
 			{ display:inline-block; vertical-align:top; }
-		
+
 		/*-------------------------| Character |-------------------------*/
-		
+
 		#character > div,
 		#character .banner .logo,
-		#character .banner .title 
+		#character .banner .title
 		{ display:inline-block; vertical-align:top; float: left; }
-			
-		#character .group { 
+
+		#character .group {
 			width:100px;
 			margin-top: 15px;
 			margin-left: 15px;
@@ -190,18 +190,18 @@ background-repeat:no-repeat; }
 			vertical-align: middle;
 			background-color: #eee; }
 		#character .group:hover { background-color:#fff000; color:white; }
-		
+
 		#character .members { width:900px;float: left; }
 		#character .member { width:100px; display:inline-block; margin:10px; }
 		#character .members .avatar { width:100%; }
 		#character .members .name { text-align:center; }
-		
+
 		/*-------------------------| Files |-------------------------*/
-		
-		
-			
-		
-		
+
+
+
+
+
 /*-------------------------| Footer |-------------------------*/
 
 #footer {

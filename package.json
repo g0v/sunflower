@@ -9,13 +9,22 @@
         }
     ],
     "scripts": {
-        "start": "node index.js",
+        "start": "gulp --require LiveScript dev",
         "test": "echo \"Example test.\" && exit 0"
     },
     "engines":{
         "node": "0.10.x"
     },
     "dependencies": {
+    },
+    "devDependencies": {
+        "LiveScript": "1.1.x",
+        "gulp": "~3.6.0",
+        "gulp-util": "~2.2.14",
+        "express": "~3.5.1",
+        "connect-livereload": "~0.3.2",
+        "tiny-lr": "0.0.5",
+        "gulp-livereload": "~1.2.0"
     },
     "repository": [
         {
